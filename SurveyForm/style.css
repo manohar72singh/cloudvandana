@@ -1,23 +1,52 @@
 body {
   background-color: rgb(13, 153, 232);
 }
-.header {
-  color: white;
-  text-align: center;
-  font-weight: bolder;
+.hidden {
+  display: none;
 }
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#surveyForm {
+  margin-left: 400px;
+  width: 500px;
+  height: 500px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 1px 10px white;
+}
+
+/* CSS for form layout */
 .form-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
-  margin: auto;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+#submitBtn {
+  position: absolute;
+  margin-left: 170px;
+  background-color: #007bff;
+
   padding: 10px;
-  height: 350px;
-  width: 450px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+#resetBtn {
+  position: absolute;
+  margin-left: 250px;
+  padding: 10px;
+  background-color: #007bff;
 }
 .form-column {
-  display: inline-block;
   flex: 1;
   padding: 10px;
 }
@@ -26,22 +55,7 @@ body {
   margin-bottom: 5px;
 }
 .form-input {
-  width: 100%;
+  width: 200px;
   padding: 5px;
-  margin-bottom: 10px;
-}
-.hidden {
-  display: none;
-}
-#popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 20px;
 }
